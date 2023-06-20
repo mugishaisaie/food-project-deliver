@@ -1,0 +1,174 @@
+
+
+
+/* *{
+overflow-x: scroll;
+} */
+
+.contact-container{
+    background: var(--color-bg1);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 30rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+   
+}
+
+body{
+    overflow-y: scroll;
+    
+    height: fit-content;
+    margin: 0 auto;
+
+
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background: #dddddd;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #db1d5c;
+}
+
+/* body{
+    overflow-x: scroll;
+} */
+
+/* ======ASIDE========== */
+
+.contact-aside{
+    background: var(--color-primary);
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+}
+
+.aside-image{
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+
+.contact-aside h2{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contact-aside p{
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.contact-details li{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-social{
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+
+.contact-social a{
+    background: var(--color-bg2);
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    transition: var(--transtion);
+}
+
+.contact-social a:hover{
+    background: transparent;
+}
+
+/* ======FORM========== */
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+
+.form-name{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.contact-form input[type= text]{
+    width: 50%;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+
+.contact-form .btn{
+    width: max-content;
+    cursor: pointer;
+    margin-top: 1re;
+}
+
+/* ======MEDIA QUERIES========== */
+
+@media screen and (max-width: 1024) {
+
+    .contact-container{
+  gap: 1rem;
+  margin-top: 3rem;
+  height: auto;
+  padding: 1.5rem;
+    }
+
+    .contact-aside{
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+
+    .contact-form{
+        align-self: center;
+        margin-right: 1.5rem;
+
+    }
+    
+}
+
+/* ======MEDIA QUERIES  (PHONES)========== */
+
+@media screen and (max-width: 600px) {
+
+    .contact-container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .contact-form{
+        margin: 0 1.5rem 3rem;
+    }
+
+    .form-name{
+        flex-direction: column;
+    }
+
+    .form-name input[type= text]{
+         
+    }
+    
+}
